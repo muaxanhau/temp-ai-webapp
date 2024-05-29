@@ -1,0 +1,19 @@
+.container {
+    display: flex;
+    gap: var(--gap-1);
+    flex-direction: column;
+    width: 100%;
+    background-color: var(--transparent);
+}
+.input {
+    all: unset;
+    border-bottom: var(--line-1) var(--neutral900) solid;
+    background-color: var(--transparent);
+    padding: var(--padding-1);
+    color: var(--neutral900);
+    /* width: 100%; */
+}
+.error {
+    color: var(--red);
+    font-size: small;
+}

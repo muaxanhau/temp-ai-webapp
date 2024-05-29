@@ -1,0 +1,13 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    gap: var(--gap-3)
+}
+.main {
+    display: flex;
+    gap: var(--gap-1);
+    width: 100%;
+}

@@ -1,0 +1,22 @@
+.container {
+  all: unset;
+  padding: 5px 20px;
+  border-radius: var(--border-radius-1);
+  border-width: var(--line-1);
+  border-style: solid;
+  transition: var(--transition);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+}
+.container:hover {
+  transform: scale(1.025);
+}
+.activityIndicator {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: var(--padding-1);
+}

@@ -1,0 +1,8 @@
+.container {
+    display: flex;
+    background-color: var(--primary300);
+    width: 100%;
+    padding: var(--padding-1) var(--padding-3);
+    box-shadow: var(--box-shadow);
+    justify-content: space-between;
+}

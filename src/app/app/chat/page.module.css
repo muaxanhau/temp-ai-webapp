@@ -1,0 +1,69 @@
+.container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    min-height: 0;
+}
+.chatContainer {
+    position: relative;
+    display: flex;
+    flex:1;
+    min-height: 0;
+}
+.chatContainer::before,
+.chatContainer::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 1.75rem;
+}
+.chatContainer::before {
+    top: -1px;
+    background-image: linear-gradient(to bottom, var(--primary100), #fff0);
+}
+.chatContainer::after {
+    bottom: -1px;
+    background-image: linear-gradient(to top, var(--primary100), #fff0);
+}
+.chatWrapper {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap-2);
+    overflow-y: auto;
+    padding: var(--padding-2) var(--padding-1) var(--padding-2) 0;
+}
+.chatInputContainer {
+    display: flex;
+    gap: var(--gap-1);
+    align-items: center;
+}
+.chatBoxContainer {
+    display: flex;
+    gap: var(--gap-1);
+}
+.chatBoxWrapper {
+    box-shadow: var(--box-shadow);
+    border-radius: var(--border-radius-2);
+    padding: var(--padding-1);
+    max-width: 65%;
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap-1);
+}
+.avt {
+    width: 3rem;
+    height: 3rem;
+    background-color: var(--primary);
+    flex-shrink: 0;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.time {
+    font-size: 10px;
+    opacity: 0.5;
+    /* margin-top: var(--padding-1); */
+}

@@ -1,0 +1,14 @@
+.parent {
+    position: relative;
+}
+.container {
+    position: absolute;
+    padding-top: calc(var(--gap-1) / 2);
+    z-index: 1;
+}
+.wrapper {
+    padding: var(--padding-1);
+    border-radius: var(--border-radius-1);
+    background-color: var(--primary100);
+    border: solid 0.1rem var(--primary);
+}
