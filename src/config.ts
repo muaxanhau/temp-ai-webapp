@@ -54,18 +54,20 @@ const environments: EnvironmentsConfigModel = {
       release: 0,
       build: 0,
     },
-    baseUrl: "",
     staleTime: 1000 * 15,
+
+    baseUrl: "https://temp-ai-server.adaptable.app/v1/api/",
+
     firebase: {
-      apiKey: "",
-      authDomain: "",
-      projectId: "",
-      storageBucket: "",
-      messagingSenderId: "",
-      appId: "",
-      measurementId: "",
+      apiKey: "AIzaSyCpcczFlg-Ph_L3TVLFOsllt3vv4MGVFpE",
+      authDomain: "travel-gen-ai.firebaseapp.com",
+      projectId: "travel-gen-ai",
+      storageBucket: "travel-gen-ai.appspot.com",
+      messagingSenderId: "818335010879",
+      appId: "1:818335010879:web:56ac83dfe7c1178573e88a",
+      measurementId: "G-6SXDK6DT53",
     },
-    tokenName: "",
+    tokenName: "firebase-token",
   },
   PRODUCTION: {
     enableLog: false,
@@ -94,7 +96,7 @@ const environments: EnvironmentsConfigModel = {
  * *** change environment here ***
  * *******************************
  */
-export const config = environments.DEVELOPMENT;
+export const config = environments.STAGING;
 
 /**
  * debug log for response api
