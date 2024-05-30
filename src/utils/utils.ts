@@ -184,8 +184,11 @@ const log = (
 const logResponse = (
   res: AxiosResponse | AxiosError<ErrorResponseBaseModel>
 ) => {
-  const { config } = res;
-  const { method, baseURL, url, headers, params, data: body } = config!;
+  if (!config.enableLog) {
+    return;
+  }
+
+  const { method, baseURL, url, headers, params, data: body } = res.config!;
 
   let result = "";
   if (res instanceof AxiosError) {
