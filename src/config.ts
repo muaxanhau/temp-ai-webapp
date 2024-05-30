@@ -96,7 +96,7 @@ const environments: EnvironmentsConfigModel = {
  * *** change environment here ***
  * *******************************
  */
-export const config = environments.STAGING;
+export const config = environments.STAGING; //test
 
 /**
  * debug log for response api
